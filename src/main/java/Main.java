@@ -1,12 +1,16 @@
-import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.*;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
+        Professor prof1 = new Professor();
+        prof1.setNome("Katia");
+        prof1.setAreaDeEnsino("Java");
+        prof1.setAulasGravadas(20);
+        System.out.println("Nome do Docente: " + prof1.getNome());
+        System.out.println("Area de ensino: " + prof1.getAreaDeEnsino());
+        System.out.println("\n");
         Curso curso1 = new Curso();
         curso1.setTitulo("Programacao-JAVA");
         curso1.setCargaHoraria(200);
