@@ -4,6 +4,15 @@ public abstract class  Conteudo {
     protected static final double XP_PADRAO = 10d;
     private String titulo;
     private String descricao;
+    private Professor docente;
+
+    public Professor getDocente() {
+        return docente;
+    }
+
+    public void setDocente(Professor docente) {
+        this.docente = docente;
+    }
 
     public abstract double calcularXp();
 
